@@ -1,45 +1,70 @@
-# E-Voting System using Blockchain
+# Getting Started with Create React App
 
-This project is a web application that allows users to vote for their preferred candidates in an election. The project uses MongoDB for database management and has three collections for candidates, elections, and users.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Installation and Setup🔧
+## Available Scripts
 
-### MongoDB🍃
+In the project directory, you can run:
 
-To create the required database collections, refer to the `/server/Models` files after entering the URL in `/server/.env` line 2.
+### `npm start`
 
-### Third-Party Email Verification 📧
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-To enable automatic email sending, add third-party verification to your email and register the app to get a secret key🔑. Then, add the email and password in `/server/.env`.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-For more detail: https://support.google.com/accounts/answer/185833
+### `npm test`
 
-### Ganache⛓️
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-For free ethereum, install Ganache and add `/smart_contract/truffle-config.js` to your account to receive ten free accounts with 100 ETH.
+### `npm run build`
 
-### Metamask 🦊
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Add the Metamask Chrome extension for transactions.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Contract Compilation 💻
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-To compile the contract, open the command prompt and navigate to the `smart_contract` directory using the command `cd smart_contract`. Then, run the command `npm install -g truffle`(if truffle already not installed), `truffle compile` and `truffle migrate`. Finally, follow the steps after compilation by copying and pasting the address and `transaction.json`.
+### `npm run eject`
 
-After installing Ganache, compile the contract in `/smart_contract` using Truffle. Then, add the transaction address in `Client/utils/Constant.js`. Also, copy `/smart_contract/build/contracts/Transaction.json` and paste it in `Client/utils/Transaction.json` for ABI value.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Python Script(required for face authentication)🐍
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-To install the necessary packages for the Python script, use the command `pip install opencv-python, numpy, os, face_recognition`. Add photos to `/Face` with the same username in use. To add a URL for photos, go to `/server/Controller/encoded.py` line 6.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Want to Enable/Disable Face Authentication ?🤔
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Default value is false to enable/disable change `isFaceRecognitionEnable` in `Client/src/Data/Variable.jsx`.(Python Modules required)
+## Learn More
 
-### Running the Web Application🌐
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Follow the steps below to run the web application:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-1.  Go to the `Client` folder and install all node modules using `npm install` then run the command `npm run start`.
-2.  Go to the `server` folder and install all node modules using `npm install` then run the command `nodemon main`.
-3.  Wait a few minutes for the site to start.
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
